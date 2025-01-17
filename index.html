@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #555;
+        }
+
+        .newspaper-container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        .headline {
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        .headline h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .headline p {
+            font-size: 1.1em;
+            margin: 10px 0 0;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .main-content section {
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+
+        article p {
+            text-align: justify;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        article img {
+            margin: 0 15px 10px 0;
+            width: 180px;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            float: left; 
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .right-column {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+        }
+
+        .editor-picks h4, .weather h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .editor-picks ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .editor-picks ul li {
+            margin-bottom: 10px;
+        }
+
+        .editor-picks ul li a {
+            text-decoration: none;
+            color:  #1565C0 ;
+        }
+
+        .weather p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1.0em;
+            margin-top: 40px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-top: 1px solid #ccc;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Momentum Daily</h1>
+        <p>Your Trusted Source for Global News</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#world-news">World News</a>
+        <a href="#technology-news">Technology</a>
+        <a href="#health-news">Health</a>
+        <a href="#sports-news">Sports</a>
+    </nav>    
+    <div class="newspaper-container">
+        <div id="home" class="headline">
+            <h2>World Leaders Meet for Climate Summit</h2>
+            <p>Major discussions on renewable energy and carbon reduction strategies take center stage.</p>
+        </div>
+
+        <div class="main-content">
+            <section id="world-news">
+                <h3 class="section-title">World News</h3>
+                <h3>Global Economy Faces Challenges</h3>
+                <article class="clearfix">
+                    <img src="https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?w=400&auto=format&fit=crop&q=60" alt="Global Economy" class="float-left">
+                    <p>The global economy is experiencing turbulence as markets react to geopolitical tensions and fluctuating energy prices. Many countries are grappling with inflation, while others face challenges in balancing growth and sustainability. Economic experts are cautiously optimistic that global trade will stabilize, though many regions are projected to face difficulties for the remainder of the year. Some countries are also seeing a sharp decline in their currency values, adding to the complexities of managing national budgets.</p>
+
+                    <p>As world economies navigate these challenges, governments are implementing strategies to boost job growth and stimulate domestic industries. However, the effects of these measures remain uncertain, with many countries facing a delicate balancing act between stimulating their economies and addressing rising debt levels. The increasing role of technology and digital transformation is expected to be key in shaping the future of the global economy, providing opportunities for innovation while also presenting new risks for traditional industries.</p>
+
+                    <p>Despite the challenges, experts suggest that cooperation between nations, the advancement of sustainable business practices, and investments in new technologies could help mitigate the risks. The future of the global economy will likely depend on how countries navigate these complex issues and how they manage to adapt to an ever-changing global landscape.</p>
+                </article>
+
+                <div id="technology-news">
+                    <h3 class="section-title">Technology News</h3>
+                    <h3>New AI Technology Revolutionizes Healthcare</h3>
+                    <article class="clearfix">
+                        <img src="https://plus.unsplash.com/premium_photo-1698421947098-d68176a8f5b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWklMjBpbiUyMGhlYWx0aGNhcmV8ZW58MHx8MHx8fDA%3D" alt="AI in Healthcare" class="float-left">
+                        <p>Artificial Intelligence (AI) has made remarkable strides in healthcare, with new technologies now assisting in diagnosing diseases, analyzing medical data, and even developing personalized treatment plans. AI systems are being used to enhance the accuracy of diagnoses, reducing the time it takes to detect conditions such as cancer and heart disease. This technology has the potential to save countless lives by providing early detection and tailored interventions for patients.</p>
+
+                        <p>Medical professionals are optimistic about the potential of AI in healthcare, but they also caution that ethical concerns, such as data privacy and the potential for bias in AI algorithms, need to be carefully addressed. Nevertheless, AI's role in medicine is only expected to grow, with new advancements and applications emerging rapidly in fields such as genomics, robotic surgery, and telemedicine.</p>
+                    </article>
+                </div>
+
+                <div id="health-news">
+                    <h3 class="section-title">Health & Wellness</h3>
+                    <h3>Exercise and Mental Health: A Powerful Connection</h3>
+                    <article class="clearfix">
+                        <img src="https://images.unsplash.com/photo-1486739985386-d4fae04ca6f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D" alt="Exercise and Mental Health" class="float-left">
+                        <p>Regular physical exercise is not only beneficial for physical health but also plays a crucial role in mental well-being. Studies show that exercise can help reduce symptoms of anxiety, depression, and stress by releasing endorphins and promoting a positive mood. Furthermore, physical activity can improve cognitive function, boost self-esteem, and increase overall happiness.</p>
+
+                        <p>Experts recommend incorporating at least 30 minutes of moderate exercise into your daily routine to reap the mental health benefits. Activities such as walking, jogging, yoga, and swimming have been found to have a positive impact on both mental and physical health. Mental health professionals also encourage individuals to find activities they enjoy, as this helps to maintain a consistent exercise routine and leads to long-term mental health benefits.</p>
+                    </article>
+                </div>
+
+                <div id="sports-news">
+                    <h3 class="section-title">Sports</h3>
+                    <h3>Team A Wins Championship</h3>
+                    <article class="clearfix">
+                        <p>In a thrilling match last night, Team A emerged victorious in the national championship, defeating their rivals 3-2. The game was intense, with both teams giving it their all in the final moments. The winning goal came in the last minute, securing Team A's second consecutive title. 
+                        <img id="sports" src="https://images.unsplash.com/photo-1607627000458-210e8d2bdb1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnRzfGVufDB8fDB8fHww" alt="Sports">
+                        The match was filled with drama as both teams displayed remarkable skill and determination. Early in the game, Team A dominated possession, but their opponents fought back with a quick counterattack that leveled the score. As the game progressed, both sides created multiple opportunities, but it was Team A's forward who scored the decisive goal after a stunning assist.
+                        Fans in the stadium erupted in celebration as Team A’s players celebrated their hard-fought victory. The coach praised the team's resilience and teamwork, saying that their ability to stay focused under pressure was the key to their success. “We knew it was going to be a tough game, but the players really stepped up when it mattered most,” the coach said in a post-match interview. With this win, Team A not only secured the national championship but also earned a spot in the upcoming international tournament.</p>
+                        Fans are already looking forward to the next season, where Team A will aim to defend their title and build on their impressive performance. The championship victory has given the team a boost of confidence, and many are eager to see if they can maintain their dominance in the coming years.</p>
+                    </article>
+                </div>
+            </section>
+
+            <div class="right-column">
+                <div class="editor-picks">
+                    <h4>Editor's Picks</h4>
+                    <ul>
+                        <li><a href="#">Opinion: The Future of Renewable Energy</a></li>
+                        <li><a href="#">Tech: Innovations That Changed the Decade</a></li>
+                        <li><a href="#">Culture: The Rise of Independent Cinema</a></li>
+                    </ul>
+                </div>
+
+                <div class="weather">
+                    <h4>Weather Update</h4>
+                    <p>New York: 24°C, Sunny</p>
+            <p>London: 18°C, Cloudy</p>
+            <p>Tokyo: 22°C, Rain</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Momentum Daily. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
